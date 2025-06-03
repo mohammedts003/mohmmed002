@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مدونتي الشخصية</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- شريط التنقل -->
+     <nav class="navbar">
+        <div class="logo">
+           
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html"><i class="fas fa-home"></i><span>الرئيسية</span> </a></li>
+            <li><a href="about.html" class="fa-me"><i class="fas fa-user"></i><span>عني</span> </a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope"></i><span> تواصل معي </span> </a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <!-- القسم الرئيسي -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>مرحباً بك في مدونتي الشخصية</h1>
+            <p>مكان لمشاركة أفكاري ومعرفتي في مجال تطوير الويب</p>
+        </div>
+    </header>
+
+    <!-- قسم المقالات -->
+    <section class="latest-posts">
+        <h2>أحدث المقالات</h2>
+        <div class="posts-container">
+            <!-- المقال الأول -->
+            <div class="post-card">
+                <div class="post-image"></div>
+                <div class="post-content">
+                    <h3>أساسيات HTML</h3>
+                    <p>تعرف على أساسيات لغة HTML وكيفية بناء هيكل صفحات الويب بشكل صحيح.</p>
+                    <a href="post.html?id=1" class="read-more">اقرأ المزيد</a>
+                </div>
+            </div>
+            
+            <!-- المقال الثاني -->
+            <div class="post-card">
+                <div class="post-image"></div>
+                <div class="post-content">
+                    <h3>تنسيق الصفحات باستخدام CSS</h3>
+                    <p>اكتشف قوة CSS في تنسيق صفحات الويب وجعلها أكثر جاذبية وتفاعلية.</p>
+                    <a href="post.html?id=2" class="read-more">اقرأ المزيد</a>
+                </div>
+            </div>
+            
+            <!-- المقال الثالث -->
+            <div class="post-card">
+                <div class="post-image"></div>
+                <div class="post-content">
+                    <h3>البرمجة التفاعلية مع JavaScript</h3>
+                    <p>تعلم كيفية إضافة التفاعل والحركة إلى مواقع الويب باستخدام JavaScript.</p>
+                    <a href="post.html?id=3" class="read-more">اقرأ المزيد</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم HTML -->
+    <section class="tech-section" id="html-section">
+        <h2>HTML</h2>
+        <div class="tech-content">
+            <div class="tech-info">
+                <h3>ما هو HTML؟</h3>
+                <p>HTML هي لغة ترميز تستخدم لإنشاء وتصميم صفحات ومواقع الويب. إنها اللبنات الأساسية لأي موقع ويب، وتستخدم لتحديد هيكل المحتوى على الصفحة من خلال العناصر والوسوم.</p>
+                <h3>أهم العناصر في HTML</h3>
+                <ul>
+                    <li><code>&lt;html&gt;</code> - العنصر الجذر</li>
+                    <li><code>&lt;head&gt;</code> - يحتوي على معلومات حول المستند</li>
+                    <li><code>&lt;title&gt;</code> - يحدد عنوان الصفحة</li>
+                    <li><code>&lt;body&gt;</code> - يحتوي على المحتوى المرئي للصفحة</li>
+                    <li><code>&lt;h1&gt; - &lt;h6&gt;</code> - عناوين بمستويات مختلفة</li>
+                    <li><code>&lt;p&gt;</code> - فقرة من النص</li>
+                    <li><code>&lt;a&gt;</code> - رابط</li>
+                    <li><code>&lt;img&gt;</code> - صورة</li>
+                    <li><code>&lt;div&gt;</code> - حاوية عامة للمحتوى</li>
+                </ul>
+            </div>
+            <div class="tech-example">
+                <h3>مثال على كود HTML</h3>
+                <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;عنوان الصفحة&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;عنوان رئيسي&lt;/h1&gt;
+    &lt;p&gt;هذه فقرة من النص.&lt;/p&gt;
+    &lt;a href="https://example.com"&gt;رابط&lt;/a&gt;
+    &lt;img src="image.jpg" alt="وصف الصورة"&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                </code></pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم CSS -->
+    <section class="tech-section" id="css-section">
+        <h2>CSS</h2>
+        <div class="tech-content">
+            <div class="tech-info">
+                <h3>ما هو CSS؟</h3>
+                <p>CSS (أوراق الأنماط المتتالية) هي لغة تستخدم لوصف عرض وتنسيق مستند مكتوب بلغة ترميز مثل HTML. CSS تفصل المحتوى عن العرض، مما يسمح بتغيير مظهر الموقع دون تعديل المحتوى.</p>
+                <h3>طرق استخدام CSS</h3>
+                <ul>
+                    <li>الأنماط المضمنة (Inline): باستخدام سمة style في عنصر HTML</li>
+                    <li>الأنماط الداخلية (Internal): باستخدام عنصر &lt;style&gt; في قسم &lt;head&gt;</li>
+                    <li>الأنماط الخارجية (External): باستخدام ملف CSS خارجي</li>
+                </ul>
+                <h3>خصائص CSS الشائعة</h3>
+                <ul>
+                    <li><code>color</code> - لون النص</li>
+                    <li><code>background-color</code> - لون الخلفية</li>
+                    <li><code>font-size</code> - حجم الخط</li>
+                    <li><code>margin</code> - الهامش الخارجي</li>
+                    <li><code>padding</code> - الهامش الداخلي</li>
+                    <li><code>display</code> - طريقة عرض العنصر</li>
+                    <li><code>position</code> - موضع العنصر</li>
+                </ul>
+            </div>
+            <div class="tech-example">
+                <h3>مثال على كود CSS</h3>
+                <pre><code>
+/* تنسيق العنوان الرئيسي */
+h1 {
+    color: #3498db;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* تنسيق الفقرات */
+p {
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* تنسيق الروابط */
+a {
+    color: #e74c3c;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #c0392b;
+    text-decoration: underline;
+}
+                </code></pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم JavaScript -->
+    <section class="tech-section" id="js-section">
+        <h2>JavaScript</h2>
+        <div class="tech-content">
+            <div class="tech-info">
+                <h3>ما هو JavaScript؟</h3>
+                <p>JavaScript هي لغة برمجة تستخدم لإضافة التفاعل والديناميكية إلى صفحات الويب. يمكنها تغيير محتوى HTML، وتعديل أنماط CSS، والاستجابة لأحداث المستخدم مثل النقر والتمرير.</p>
+                <h3>استخدامات JavaScript</h3>
+                <ul>
+                    <li>التحقق من صحة نماذج الإدخال</li>
+                    <li>إنشاء تأثيرات حركية وتفاعلية</li>
+                    <li>تحديث محتوى الصفحة دون إعادة تحميلها</li>
+                    <li>إنشاء ألعاب وتطبيقات ويب</li>
+                    <li>التفاعل مع واجهات برمجة التطبيقات (APIs)</li>
+                </ul>
+                <h3>مفاهيم أساسية في JavaScript</h3>
+                <ul>
+                    <li>المتغيرات والثوابت</li>
+                    <li>الدوال والأحداث</li>
+                    <li>المصفوفات والكائنات</li>
+                    <li>جمل التحكم (if، switch، for، while)</li>
+                    <li>التعامل مع DOM (نموذج كائن المستند)</li>
+                </ul>
+            </div>
+            <div class="tech-example">
+                <h3>مثال على كود JavaScript</h3>
+                <pre><code>
+// التحقق من صحة نموذج الاتصال
+function validateForm() {
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+    
+    if (name === '' || email === '' || message === '') {
+        showError('يرجى ملء جميع الحقول المطلوبة');
+        return false;
+    }
+    
+    if (!isValidEmail(email)) {
+        showError('يرجى إدخال بريد إلكتروني صحيح');
+        return false;
+    }
+    
+    showSuccess('تم إرسال الرسالة بنجاح!');
+    return true;
+}
+
+// التحقق من صحة البريد الإلكتروني
+function isValidEmail(email) {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
+}
+                </code></pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- تذييل الصفحة -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>مدونتي الشخصية</h3>
+                <p>مكان لمشاركة المعرفة والخبرات في مجال تطوير الويب.</p>
+            </div>
+            <div class="footer-section">
+                <h3>روابط سريعة</h3>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="about.html">عني</a></li>
+                    <li><a href="contact.html">اتصل بي</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>تواصل معي</h3>
+                 <div class="social-icons">
+                    <a href="https://www.facebook.com/share/12K8bsBC98T/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/mohammedmitig003?igsh=bTI3ZGV5a2I5a3M5"><i class="fab fa-instagram"></i></a>
+                    <a href="+218912906478"><i class="fas fa-phone"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 مدونتي الشخصية. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
